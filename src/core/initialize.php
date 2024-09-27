@@ -2,6 +2,11 @@
 
 namespace src\core;
 
+
+if(!defined("ADMIN_CHAT_ID")){
+    define("ADMIN_CHAT_ID" , "127429408");
+    // define("ADMIN_CHAT_ID" , "");
+}
 if (!defined("TOKEN")) {
     // define("TOKEN", '6690815299:AAEBLpCN_tuDe8ZpLwNvwUvOYlwAoRItqGc');
     define("TOKEN", '8062436051:AAHGcTtWTa56l-eyOKQ-lN3kKGjvp14aCcA');
