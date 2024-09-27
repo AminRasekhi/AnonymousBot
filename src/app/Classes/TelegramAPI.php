@@ -29,9 +29,15 @@ class TelegramAPI
     public $caption;
     public $file_size;
     public $file_type;
-
     public $is_bot;
     public $is_permium;
+    public $is_message = false;
+    public $is_reply_message = false;
+    public $forwardedMessageId;
+    public $forwardedFromId;
+    public $forwardedFromUsername;
+    public $forwardedText;
+
     public function __construct()
     {
         $this->client = new Guzzle;
@@ -50,7 +56,7 @@ class TelegramAPI
             $this->is_bot = $this->response['message']['from']['is_bot'] == true ? 1 : 0;
             $this->is_permium = $this->response['message']['from']['is_permium'] == true ? 1 : 0;
             $this->media_group_id = $this->response['message']['media_group_id'] ?? null;
-
+            $this->is_message = true;
             //photo
             if (isset($this->response['message']['photo'])) {
                 $this->file_id = end($this->response['message']['photo'])['file_id'] ?? null;
@@ -74,6 +80,11 @@ class TelegramAPI
             $this->last_name = $this->response['callback_query']['from']['last_name'] ?? null;
             $this->username = $this->response['callback_query']['from']['username'] ?? null;
             $this->text = $this->response['callback_query']['data'] ?? null;
+        } elseif (isset($this->response['message']) && isset($this->response['message']['forward_from'])) {
+            $this->forwardedMessageId = $this->response['message']['message_id'];
+            $this->forwardedFromId = $this->response['message']['forward_from']['id'];
+            $this->forwardedFromUsername = $this->response['message']['username'];
+            $this->forwardedText = $this->response['message']['text']; // متن پیام فوروارد شده
         }
     }
 
@@ -87,7 +98,14 @@ class TelegramAPI
     {
         return $this->user_id;
     }
-
+    public function get_Is_message()
+    {
+        return $this->is_message;
+    }
+    public function get_Is_reply_message()
+    {
+        return $this->is_reply_message;
+    }
     public function getChat_id()
     {
         return $this->chat_id;
@@ -235,6 +253,19 @@ class TelegramAPI
 
         return $response;
     }
+    public function forwardMessage($chat_id, $from_chat_id, $message_id)
+    {
+        $params = [
+            'chat_id' => $chat_id, // شناسه چت مقصد
+            'from_chat_id' => $from_chat_id, // شناسه چت فرستنده
+            'message_id' => $message_id, // شناسه پیام که باید فوروارد شود
+        ];
+
+        $response = $this->client->request('forwardMessage', $params);
+
+        return $response;
+    }
+
     public function sendPhoto($photo, $caption = null, $reply_markup = null)
     {
         $params = [
