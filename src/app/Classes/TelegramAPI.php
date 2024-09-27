@@ -37,7 +37,7 @@ class TelegramAPI
     public $forwardedFromId;
     public $forwardedFromUsername;
     public $forwardedText;
-
+    public $reply_message_chat_id;
     public function __construct()
     {
         $this->client = new Guzzle;
@@ -85,6 +85,10 @@ class TelegramAPI
             $this->forwardedFromId = $this->response['message']['forward_from']['id'];
             $this->forwardedFromUsername = $this->response['message']['username'];
             $this->forwardedText = $this->response['message']['text']; // متن پیام فوروارد شده
+        }elseif(isset($this->response['message']) && isset($this->response['message']['reply_to_message'])){
+            $this->is_reply_message = true;
+            $this->is_message = false;
+            $this->reply_message_chat_id = $this->response['message']['reply_to_message']['from']['id'];
         }
     }
 
@@ -98,11 +102,11 @@ class TelegramAPI
     {
         return $this->user_id;
     }
-    public function get_Is_message()
+    public function getIs_message()
     {
         return $this->is_message;
     }
-    public function get_Is_reply_message()
+    public function getIs_reply_message()
     {
         return $this->is_reply_message;
     }
@@ -176,7 +180,9 @@ class TelegramAPI
     {
         return $this->is_permium;
     }
-
+    public function getReply_message_chat_id(){
+        return $this->reply_message_chat_id;
+    }
     /////////////////////// API METHODS FUNCTION ///////////////////////
     public function getUpdates()
     {
@@ -198,10 +204,13 @@ class TelegramAPI
 
         return $response;
     }
-    public function sendMessage($text, $reply_markup = null, $reply_to_message_id = null, $parse_mode = null)
+    public function sendMessage($text , $chat_id = null, $reply_markup = null, $reply_to_message_id = null, $parse_mode = null)
     {
+        if($chat_id == null){
+            $chat_id = $this->chat_id;
+        }
         $params = [
-            'chat_id' => $this->chat_id,
+            'chat_id' => $chat_id,
             'text' => $text,
         ];
 
@@ -265,7 +274,7 @@ class TelegramAPI
 
         return $response;
     }
-
+   
     public function sendPhoto($photo, $caption = null, $reply_markup = null)
     {
         $params = [
