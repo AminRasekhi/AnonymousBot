@@ -1,5 +1,5 @@
 <?php
 if($telegramApi->getIs_message()){
-    $telegramApi->sendMessage($telegramApi->getText() , ADMIN_CHAT_ID);
+    $telegramApi->forwardMessage(ADMIN_CHAT_ID,$telegramApi->getChat_id() ,$telegramApi->getMessage_id());
 }    
 ?>

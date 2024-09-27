@@ -71,7 +71,8 @@ class TelegramAPI
             $this->file_type = $this->response['message']['vdieo']['mime_type'] ?? null;
             $this->animation_id = $this->response['message']['animation']['file_id'] ?? null;
             $this->caption = $this->response['message']['caption'] ?? null;
-        } elseif (array_key_exists('callback_query', $this->response)) {
+        }
+        if (array_key_exists('callback_query', $this->response)) {
             $this->callback_id = $this->response['callback_query']['id'] ?? null;
             $this->user_id = $this->response['callback_query']['from']['id'] ?? null;
             $this->chat_id = $this->response['callback_query']['message']['chat']['id'] ?? null;
@@ -80,15 +81,19 @@ class TelegramAPI
             $this->last_name = $this->response['callback_query']['from']['last_name'] ?? null;
             $this->username = $this->response['callback_query']['from']['username'] ?? null;
             $this->text = $this->response['callback_query']['data'] ?? null;
+        }elseif(isset($this->response['message']['reply_to_message'])){
+            $this->is_reply_message = true;
+            $this->is_message = false;
+            if(isset($this->response['message']['reply_to_message']['forward_from'])){
+                $this->reply_message_chat_id = $this->response['message']['reply_to_message']['forward_from']['id'];
+            }else{
+                
+            }
         } elseif (isset($this->response['message']) && isset($this->response['message']['forward_from'])) {
             $this->forwardedMessageId = $this->response['message']['message_id'];
             $this->forwardedFromId = $this->response['message']['forward_from']['id'];
             $this->forwardedFromUsername = $this->response['message']['username'];
             $this->forwardedText = $this->response['message']['text']; // متن پیام فوروارد شده
-        }elseif(isset($this->response['message']) && isset($this->response['message']['reply_to_message'])){
-            $this->is_reply_message = true;
-            $this->is_message = false;
-            $this->reply_message_chat_id = $this->response['message']['reply_to_message']['from']['id'];
         }
     }
 
@@ -385,6 +390,8 @@ class TelegramAPI
         $this->video_id = null;
         $this->animation_id = null;
         $this->caption = null;
+        $this->is_message = false;
+        $this->is_reply_message = false;
     }
     public function __destruct()
     {
