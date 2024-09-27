@@ -4,7 +4,7 @@ namespace src\core;
 
 if (!defined("TOKEN")) {
     // define("TOKEN", '6690815299:AAEBLpCN_tuDe8ZpLwNvwUvOYlwAoRItqGc');
-    define("TOKEN", '7170992983:AAGTRKvnZi6CpA_stgUFRkP4O7vHBpk0EsI');
+    define("TOKEN", '8062436051:AAHGcTtWTa56l-eyOKQ-lN3kKGjvp14aCcA');
 }
 if (!defined("DOMAIN")) {
     define('DOMAIN', 'https://moblekhoshrang.ir/');
@@ -13,7 +13,7 @@ if (!defined('API')) {
     define('API', "https://api.telegram.org/bot" . TOKEN . "/");
 }
 if (!defined('BOT_USERNAME')) {
-    define('BOT_USERNAME', 'https://t.me/hmd_event_bot');
+    define('BOT_USERNAME', 'https://t.me/HajAmin_Botbot');
 }
 if (!defined('BOT_NAME')) {
     define('BOT_NAME', 'EventBot');

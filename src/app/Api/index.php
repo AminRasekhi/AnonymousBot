@@ -10,5 +10,6 @@ require_once "../../core/initialize.php";
 
 //TelegramAPI Instance
 $telegramApi = new TelegramAPI;
+$getText = $telegramApi->getText();
 // //DB Instance
 $sql = new DB();
