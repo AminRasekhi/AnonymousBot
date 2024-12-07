@@ -5,10 +5,10 @@ namespace src\core;
 
 
 if (!defined("ADMIN_CHAT_ID")) {
-    define("ADMIN_CHAT_ID", ["127429408", "5618016240"]);
+    define("ADMIN_CHAT_ID", ["127429408", "5618016240", "5477776205"]);
 }
 if (!defined("TOKEN")) {
-    define("TOKEN", '7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU');
+    define("TOKEN", '7813471648:AAHsc-nuCsplPIYKAds25scuBteV8zwA_wA');
 }
 if (!defined("DOMAIN")) {
     define('DOMAIN', 'https://moblekhoshrang.ir/');
@@ -17,10 +17,10 @@ if (!defined('API')) {
     define('API', "https://api.telegram.org/bot" . TOKEN . "/");
 }
 if (!defined('BOT_USERNAME')) {
-    define('BOT_USERNAME', 'https://t.me/HmdAnonymousBot');
+    define('BOT_USERNAME', 'https://t.me/AsanDropSupport_Bot');
 }
 if (!defined('BOT_NAME')) {
-    define('BOT_NAME', 'PHarse');
+    define('BOT_NAME', 'پشتیبانی آسان دراپ');
 }
 //DB Config
 if (!defined('DB_NAME')) {
@@ -28,7 +28,7 @@ if (!defined('DB_NAME')) {
     // define('DB_NAME', 'eventBot');
 
     /// host ///
-    define('DB_NAME', 'moblekho_hmd_unknow_bot');
+    define('DB_NAME', 'moblekho_asan_drop_support');
 }
 if (!defined('DB_USERNAME')) {
     /// local ///

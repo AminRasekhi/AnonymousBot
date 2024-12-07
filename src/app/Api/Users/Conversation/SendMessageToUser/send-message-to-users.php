@@ -46,5 +46,6 @@ function sendMedia($text, $username, $chat_id, $file_type = "message", $file_id 
         }
     }
     $textForRobot = "پیام شما با موفقیت ارسال شد برای کاربر $username .";
-    $telegramApi->sendMessage($textForRobot, ADMIN_CHAT_ID);
+
+    $telegramApi->sendMessage($textForRobot);
 }
