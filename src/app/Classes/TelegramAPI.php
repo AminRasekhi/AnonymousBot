@@ -38,6 +38,7 @@ class TelegramAPI
     public $forwardedFromUsername;
     public $forwardedText;
     public $reply_message_chat_id;
+    public $reply_message_text;
     public function __construct()
     {
         $this->client = new Guzzle;
@@ -81,13 +82,13 @@ class TelegramAPI
             $this->last_name = $this->response['callback_query']['from']['last_name'] ?? null;
             $this->username = $this->response['callback_query']['from']['username'] ?? null;
             $this->text = $this->response['callback_query']['data'] ?? null;
-        }elseif(isset($this->response['message']['reply_to_message'])){
+        } elseif (isset($this->response['message']['reply_to_message'])) {
             $this->is_reply_message = true;
             $this->is_message = false;
-            if(isset($this->response['message']['reply_to_message']['forward_from'])){
+            if (isset($this->response['message']['reply_to_message'])) {
+                $this->reply_message_text = $this->response['message']['reply_to_message']['text'];
                 $this->reply_message_chat_id = $this->response['message']['reply_to_message']['forward_from']['id'];
-            }else{
-                
+            } else {
             }
         } elseif (isset($this->response['message']) && isset($this->response['message']['forward_from'])) {
             $this->forwardedMessageId = $this->response['message']['message_id'];
@@ -185,8 +186,13 @@ class TelegramAPI
     {
         return $this->is_permium;
     }
-    public function getReply_message_chat_id(){
+    public function getReply_message_chat_id()
+    {
         return $this->reply_message_chat_id;
+    }
+    public function getReply_message_Text()
+    {
+        return $this->reply_message_text;
     }
     /////////////////////// API METHODS FUNCTION ///////////////////////
     public function getUpdates()
@@ -209,9 +215,9 @@ class TelegramAPI
 
         return $response;
     }
-    public function sendMessage($text , $chat_id = null, $reply_markup = null, $reply_to_message_id = null, $parse_mode = null)
+    public function sendMessage($text, $chat_id = null, $reply_markup = null, $reply_to_message_id = null, $parse_mode = null)
     {
-        if($chat_id == null){
+        if ($chat_id == null) {
             $chat_id = $this->chat_id;
         }
         $params = [
@@ -279,7 +285,7 @@ class TelegramAPI
 
         return $response;
     }
-   
+
     public function sendPhoto($photo, $caption = null, $reply_markup = null)
     {
         $params = [

@@ -9,7 +9,7 @@ require_once __DIR__ . "/../../../vendor/autoload.php";
 require_once "../../core/initialize.php";
 
 //TelegramAPI Instance
-$telegramApi = new TelegramAPI;
+$telegramApi = new TelegramAPI();
 $getText = $telegramApi->getText();
 // //DB Instance
 $sql = new DB();

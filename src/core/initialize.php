@@ -3,13 +3,11 @@
 namespace src\core;
 
 
-if(!defined("ADMIN_CHAT_ID")){
-    define("ADMIN_CHAT_ID" , "127429408");
-    // define("ADMIN_CHAT_ID" , "");
+if (!defined("ADMIN_CHAT_ID")) {
+    define("ADMIN_CHAT_ID", "127429408");
 }
 if (!defined("TOKEN")) {
-    // define("TOKEN", '6690815299:AAEBLpCN_tuDe8ZpLwNvwUvOYlwAoRItqGc');
-    define("TOKEN", '8062436051:AAHGcTtWTa56l-eyOKQ-lN3kKGjvp14aCcA');
+    define("TOKEN", '7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU');
 }
 if (!defined("DOMAIN")) {
     define('DOMAIN', 'https://moblekhoshrang.ir/');
@@ -18,10 +16,10 @@ if (!defined('API')) {
     define('API', "https://api.telegram.org/bot" . TOKEN . "/");
 }
 if (!defined('BOT_USERNAME')) {
-    define('BOT_USERNAME', 'https://t.me/HajAmin_Botbot');
+    define('BOT_USERNAME', 'https://t.me/HmdAnonymousBot');
 }
 if (!defined('BOT_NAME')) {
-    define('BOT_NAME', 'EventBot');
+    define('BOT_NAME', 'PHarse');
 }
 //DB Config
 if (!defined('DB_NAME')) {
@@ -29,7 +27,7 @@ if (!defined('DB_NAME')) {
     // define('DB_NAME', 'eventBot');
 
     /// host ///
-    define('DB_NAME', 'moblekho_eventBot');
+    define('DB_NAME', 'moblekho_hmd_unknow_bot');
 }
 if (!defined('DB_USERNAME')) {
     /// local ///

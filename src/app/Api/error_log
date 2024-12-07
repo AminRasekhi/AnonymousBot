@@ -1,0 +1,438 @@
+[13-Nov-2024 13:24:51 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:25:27 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:25:32 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:25:37 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:27:16 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:30:22 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:30:23 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(232): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(8): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 13:32:48 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:32:48 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(8): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 13:34:04 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:34:53 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:34:54 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(8): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 13:36:09 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:36:22 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:36:22 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(8): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 13:37:16 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:38:19 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:38:19 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(8): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 13:39:02 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:39:02 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(8): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 13:41:10 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:41:11 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(8): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 13:42:47 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:42:48 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(8): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 13:43:59 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:44:04 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 13:44:04 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(8): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 16:44:03 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 16:49:43 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 17:04:27 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 17:04:28 Asia/Tehran] PHP Warning:  Undefined variable $user in /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php on line 6
+[13-Nov-2024 17:04:28 Asia/Tehran] PHP Warning:  Undefined array key 1 in /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php on line 7
+[13-Nov-2024 17:04:28 Asia/Tehran] PHP Warning:  Undefined variable $invited_by_user_id in /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php on line 37
+[13-Nov-2024 17:04:37 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 17:06:27 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 17:07:23 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 17:08:33 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 17:10:16 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 17:10:16 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: bots can't send messages to bots"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(4): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(67): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 17:11:37 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 17:14:43 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 17:14:55 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 19:59:53 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 20:00:09 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 20:00:10 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `400 Bad Request` response:
+{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(233): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(6): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(67): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[13-Nov-2024 20:00:38 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 57
+[13-Nov-2024 20:06:07 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[13-Nov-2024 20:06:07 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[13-Nov-2024 20:06:07 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[13-Nov-2024 20:06:30 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[13-Nov-2024 20:07:38 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[13-Nov-2024 20:07:38 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[13-Nov-2024 20:07:38 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[13-Nov-2024 20:07:39 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[13-Nov-2024 20:07:39 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[13-Nov-2024 20:07:39 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[13-Nov-2024 20:07:39 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[13-Nov-2024 20:07:39 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[13-Nov-2024 20:07:40 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[13-Nov-2024 20:07:40 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[13-Nov-2024 20:07:40 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[13-Nov-2024 20:07:40 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[13-Nov-2024 20:07:40 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[13-Nov-2024 20:07:40 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:41:46 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:41:46 Asia/Tehran] PHP Warning:  Undefined variable $user in /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php on line 6
+[07-Dec-2024 10:41:46 Asia/Tehran] PHP Warning:  Undefined array key 1 in /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php on line 7
+[07-Dec-2024 10:41:46 Asia/Tehran] PHP Warning:  Undefined variable $invited_by_user_id in /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php on line 37
+[07-Dec-2024 10:41:54 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:41:54 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:41:54 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:42:05 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:42:20 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:42:20 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:42:20 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:42:20 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `400 Bad Request` response:
+{"ok":false,"error_code":400,"description":"Bad Request: message text is empty"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(238): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(6): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(67): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[07-Dec-2024 10:42:37 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:42:37 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:42:37 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:42:38 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `400 Bad Request` response:
+{"ok":false,"error_code":400,"description":"Bad Request: message text is empty"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(238): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(6): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(67): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[07-Dec-2024 10:42:54 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:42:54 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:42:54 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:43:18 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:43:18 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:43:18 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:43:18 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `400 Bad Request` response:
+{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(238): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(6): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(67): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[07-Dec-2024 10:43:50 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:47:24 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:47:24 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:47:24 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:47:24 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `400 Bad Request` response:
+{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(238): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(6): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(67): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[07-Dec-2024 10:47:45 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:48:48 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 10:48:48 Asia/Tehran] PHP Warning:  Undefined array key "forward_from" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:48:48 Asia/Tehran] PHP Warning:  Trying to access array offset on null in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 90
+[07-Dec-2024 10:48:48 Asia/Tehran] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU/sendMessage` resulted in a `400 Bad Request` response:
+{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+ in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111
+Stack trace:
+#0 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Middleware.php(72): GuzzleHttp\Exception\RequestException::create()
+#1 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(158): GuzzleHttp\Promise\Promise::callHandler()
+#3 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(251): GuzzleHttp\Promise\TaskQueue->run()
+#5 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/promises/src/Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Promise\Promise->wait()
+#10 /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request()
+#11 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/Guzzle.php(19): GuzzleHttp\Client->get()
+#12 /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php(238): src\app\Classes\Guzzle->request()
+#13 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/Conversation/SendMessageToUser/send-message-to-users.php(6): src\app\Classes\TelegramAPI->sendMessage()
+#14 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php(67): include_once('/home/moblekho/...')
+#15 /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/index.php(17): include_once('/home/moblekho/...')
+#16 {main}
+  thrown in /home/moblekho/public_html/HmdAnonymousBot/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 111
+[07-Dec-2024 12:36:56 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
+[07-Dec-2024 12:36:56 Asia/Tehran] PHP Warning:  Undefined variable $user in /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php on line 6
+[07-Dec-2024 12:36:56 Asia/Tehran] PHP Warning:  Undefined array key 1 in /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php on line 7
+[07-Dec-2024 12:36:56 Asia/Tehran] PHP Warning:  Undefined variable $invited_by_user_id in /home/moblekho/public_html/HmdAnonymousBot/src/app/Api/Users/users.php on line 37
+[07-Dec-2024 12:37:14 Asia/Tehran] PHP Warning:  Undefined array key "is_permium" in /home/moblekho/public_html/HmdAnonymousBot/src/app/Classes/TelegramAPI.php on line 58
