@@ -10,8 +10,10 @@ require_once "../../core/initialize.php";
 
 //TelegramAPI Instance
 $telegramApi = new TelegramAPI();
-$getText = $telegramApi->getText();
 // //DB Instance
 $sql = new DB();
+
+$user = $sql->table('users')->select()->where('user_id', $telegramApi->getUser_id())->first();
+$userStep = $user['step'];
 
 include_once "Users/users.php";

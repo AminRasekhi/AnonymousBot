@@ -38,6 +38,7 @@ class TelegramAPI
     public $forwardedFromUsername;
     public $forwardedText;
     public $reply_message_chat_id;
+    public $reply_message_text;
 
     //// media ////
 
@@ -75,6 +76,7 @@ class TelegramAPI
             if (isset($this->response['message']['photo'])) {
                 $this->file_id = end($this->response['message']['photo'])['file_id'] ?? null;
                 $this->file_size = end($this->response['message']['photo'])['file_size'] ?? null;
+                $this->file_type = "photo";
             } else {
                 $this->file_id = null;
             }
@@ -103,8 +105,9 @@ class TelegramAPI
             $this->text = $this->response['callback_query']['data'] ?? null;
         } elseif (isset($this->response['message']['reply_to_message'])) {
             $this->is_reply_message = true;
-            $this->is_message = false;
-            if (isset($this->response['message']['reply_to_message']['forward_from'])) {
+            $this->is_message = true;
+            if (isset($this->response['message']['reply_to_message'])) {
+                $this->reply_message_text = $this->response['message']['reply_to_message']['text'];
                 $this->reply_message_chat_id = $this->response['message']['reply_to_message']['forward_from']['id'];
             } else {
             }
@@ -230,6 +233,10 @@ class TelegramAPI
     public function getReply_message_chat_id()
     {
         return $this->reply_message_chat_id;
+    }
+    public function getReply_message_Text()
+    {
+        return $this->reply_message_text;
     }
     /////////////////////// API METHODS FUNCTION ///////////////////////
     public function getUpdates()
