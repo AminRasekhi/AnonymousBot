@@ -3,8 +3,9 @@
 namespace src\core;
 
 
+
 if (!defined("ADMIN_CHAT_ID")) {
-    define("ADMIN_CHAT_ID", "127429408");
+    define("ADMIN_CHAT_ID", ["127429408", "5618016240"]);
 }
 if (!defined("TOKEN")) {
     define("TOKEN", '7806097663:AAFOdvPNvXxsMYazRyNXPiluu9mld1IKeKU');
